@@ -2,10 +2,10 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 import { useState } from 'react';
 import Map, { Marker } from 'react-map-gl/maplibre';
-import useWindowDimensions from './Hooks/useWindowDimensions';
+import useWindowDimensions from './hooks/useWindowDimensions';
 import { WindowDimensions } from './types/ui';
 
-import useMapPoints from './Hooks/useMapPoints';
+import mapPointsController from './controllers/mapPointsController';
 
 import './styles/MarkerStyles.css';
 
@@ -17,7 +17,7 @@ function App() {
     zoom: 14
   });
 
-  const { mapPoints, handleMapMouseClick, handleMarkerDrag } = useMapPoints();
+  const { mapPoints, handleMapMouseClick, handleMarkerDrag } = mapPointsController();
 
   return (
     <>
