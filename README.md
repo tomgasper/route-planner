@@ -29,9 +29,9 @@ Simple React application that uses the `react-map-gl` and `maplibre-gl` librarie
 
 ## Running the application
 
-    To start the development server, run:
-    ```sh
-    npm run dev
-    ```
+To start the development server, run:
+```sh
+npm run dev
+```
 
-    Open your browser and navigate to http://localhost:5173 to see the application in action.
+Open your browser and navigate to http://localhost:5173 to see the application in action.
