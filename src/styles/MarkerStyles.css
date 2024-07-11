@@ -1,0 +1,21 @@
+.marker {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.marker-start {
+    background-color: #376af3;
+    color: white;
+}
+
+.marker-end {
+    background-color: #df2566;
+    color: white;
+}
