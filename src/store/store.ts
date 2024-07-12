@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import mapPointsReducer from "./mapPointsSlice";
-import { persistReducer, persistStore , persistCombineReducers} from 'redux-persist';
+import { persistStore , persistCombineReducers} from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import {
     FLUSH,

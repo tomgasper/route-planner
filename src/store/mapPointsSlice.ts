@@ -4,11 +4,13 @@ import type { Point } from "../types/mapPoints";
 type MapPointsState = {
     pointA: Point | null,
     pointB: Point | null,
+    route: any
 }
 
 const initialState: MapPointsState = {
     pointA: null,
     pointB: null,
+    route: null
 };
 
 const mapPointsSlice = createSlice({
@@ -24,10 +26,13 @@ const mapPointsSlice = createSlice({
         updatePoint(state, action: PayloadAction<{ point: 'pointA' | 'pointB'; coords: Point }>)
         {
             state[action.payload.point] = action.payload.coords;
+        },
+        setRoute(state, action: PayloadAction<any>) {
+            state.route = action.payload;
         }
     }
 });
 
-export const { setPointA, setPointB, updatePoint } = mapPointsSlice.actions;
+export const { setPointA, setPointB, updatePoint, setRoute } = mapPointsSlice.actions;
 
 export default mapPointsSlice.reducer;
